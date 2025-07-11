@@ -2,9 +2,9 @@
 
 import { createApp } from 'vue'
 import AppTuto from './App.vue'
-
-// createApp(AppTuto).mount('#app')s
-
 import todoList from './TodoList.vue'
+import obs from './Obs.vue'
 
-createApp(todoList).mount('#app')
+createApp(obs).mount('#app')
+// createApp(todoList).mount('#app')
+// createApp(AppTuto).mount('#app')
