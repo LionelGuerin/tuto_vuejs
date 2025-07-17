@@ -1,5 +1,7 @@
 <template>
-  <QuizContainer class="QuizContainer" :data="quizs"> </QuizContainer>
+  <div class="appcontainer">
+    <QuizContainer class="QuizContainer" :data="quizs"> </QuizContainer>
+  </div>
 </template>
 
 <script setup>
@@ -29,12 +31,16 @@ console.log('quizs', quizs.value)
   display: flex;
   margin: auto;
 }
-html,
-body,
-#app {
+.appcontainer {
   display: flex;
   align-items: center; /* vertical */
   justify-content: center; /* horizontal */
+  height: 100%;
+  width: 100%;
+}
+html,
+body,
+#app {
   height: 100%;
   width: 100%;
 }
